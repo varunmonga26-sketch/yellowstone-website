@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yellowstone National Park</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="dark-mode font-sans min-h-screen">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 header-dark backdrop-blur-lg shadow-lg p-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <h1 class="text-2xl md:text-3xl font-extrabold text-yellow-400 animate-header drop-shadow-md">
+        Yellowstone National Park
+      </h1>
+      <div class="flex items-center space-x-6">
+        <nav class="space-x-6 text-base font-semibold">
+          <a href="#about" class="text-gray-100 nav-link hover:underline cursor-pointer">About</a>
+          <a href="#things-to-do" class="text-gray-100 nav-link hover:underline cursor-pointer">Things To Do</a>
+          <a href="#things-to-avoid" class="text-gray-100 nav-link hover:underline cursor-pointer">Things To Avoid</a>
+          <a href="#photos" class="text-gray-100 nav-link hover:underline cursor-pointer">Photos</a>
+        </nav>
+        <button id="themeToggle" class="px-3 py-1 rounded-full font-medium shadow bg-yellow-400 text-black hover:bg-yellow-300 theme-btn">
+          ☀️ Light
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative h-80 md:h-96 lg:h-[500px] overflow-hidden rounded-b-2xl shadow-xl">
+    <img src="https://images.unsplash.com/photo-1592184525207-6e9c2d1b330b?auto=format&fit=crop&w=1470&q=80" 
+         alt="Old Faithful geyser in Yellowstone" 
+         class="w-full h-full object-cover fade-in" />
+    <div class="absolute inset-0 flex items-center justify-center text-center bg-black bg-opacity-50">
+      <div class="p-6 fade-in">
+        <h2 class="text-3xl md:text-5xl font-bold text-yellow-300 drop-shadow-lg scale-in">
+          Geysers, Wildlife & Wide Open Skies
+        </h2>
+        <p class="mt-3 text-lg fade-in">
+          Discover the beauty of America’s first National Park
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto p-6 my-10 slide-in-left">
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <img src="https://images.unsplash.com/photo-1603031999354-7983b1b680c3?auto=format&fit=crop&w=1470&q=80" 
+           alt="Aerial view of Yellowstone" 
+           class="w-full md:w-1/2 h-64 object-cover rounded-xl shadow-lg image-hover" />
+      <div class="md:w-1/2 fade-in">
+        <h3 class="text-2xl font-bold mb-4 text-yellow-300">About Yellowstone</h3>
+        <p class="text-lg leading-relaxed text-preserve-lines">
+          Yellowstone National Park was the first national park in the world, established in 1872. It covers over 2 million acres across Wyoming, Montana, and Idaho. The park is famous for geysers, hot springs, waterfalls, and canyons. Wildlife is abundant: you can see bison, elk, bears, wolves, and eagles. Yellowstone’s landscapes range from mountain peaks and forests to rivers and geothermal features. Visiting Yellowstone gives you a chance to connect with nature and experience America’s original wilderness. Fun fact: Old Faithful erupts approximately every 90 minutes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Things To Do -->
+  <section id="things-to-do" class="max-w-6xl mx-auto p-6 my-10 slide-in-right">
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <img src="https://images.unsplash.com/photo-1572551035293-4a8a1b747b12?auto=format&fit=crop&w=1470&q=80" 
+           alt="Hiking in Yellowstone" 
+           class="w-full md:w-1/2 h-64 object-cover rounded-xl shadow-lg image-hover" />
+      <div class="md:w-1/2 fade-in">
+        <h3 class="text-2xl font-bold mb-4 text-yellow-300">Things To Do</h3>
+        <ol class="text-lg list-decimal list-inside space-y-2 leading-relaxed">
+          <li>Watch Geysers & Hot Springs – See Old Faithful erupt and explore geothermal areas.</li>
+          <li>Hiking & Nature Walks – Trails range from easy boardwalks to challenging mountain hikes.</li>
+          <li>Wildlife Viewing – Look for bison, elk, bears, and wolves safely.</li>
+          <li>Camping – Campgrounds inside the park; book early for sunrise/sunset experience.</li>
+          <li>Photography & Scenic Drives – Drive along Yellowstone Lake, Lamar Valley, and Hayden Valley.</li>
+          <li>Ranger Programs – Attend talks or guided walks to learn about wildlife and geology.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Things To Avoid -->
+  <section id="things-to-avoid" class="max-w-6xl mx-auto p-6 my-10 slide-in-left">
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c443e91?auto=format&fit=crop&w=1470&q=80" 
+           alt="Caution signs in Yellowstone" 
+           class="w-full md:w-1/2 h-64 object-cover rounded-xl shadow-lg image-hover" />
+      <div class="md:w-1/2 fade-in">
+        <h3 class="text-2xl font-bold mb-4 text-yellow-300">Things To Avoid</h3>
+        <ol class="text-lg list-decimal list-inside space-y-2 leading-relaxed">
+          <li>Never Feed Wildlife – Dangerous for you and them.</li>
+          <li>Stay on Marked Trails – Protect fragile areas and yourself.</li>
+          <li>Avoid Approaching Bears or Wolves – Keep safe distance.</li>
+          <li>Do Not Disturb Natural Features – Leave geysers and rivers intact.</li>
+          <li>Follow Park Rules & Signs – Safety and conservation first.</li>
+          <li>Don’t Litter – Take all trash with you.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photos -->
+  <section id="photos" class="max-w-6xl mx-auto p-6 mt-10">
+    <h3 class="text-2xl font-bold mb-6 text-yellow-300 fade-in">Photo Gallery</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="gallery-item overflow-hidden rounded-xl shadow-lg cursor-pointer image-hover">
+        <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=1470&q=80" alt="Mountain view" class="w-full h-64 object-cover" />
+      </div>
+      <div class="gallery-item overflow-hidden rounded-xl shadow-lg cursor-pointer image-hover">
+        <img src="https://images.unsplash.com/photo-1508873696983-2dfd5898f5e1?auto=format&fit=crop&w=1470&q=80" alt="Waterfall" class="w-full h-64 object-cover" />
+      </div>
+      <div class="gallery-item overflow-hidden rounded-xl shadow-lg cursor-pointer image-hover">
+        <img src="https://images.unsplash.com/photo-1501769214405-5e04f25b65da?auto=format&fit=crop&w=1470&q=80" alt="Bear wildlife" class="w-full h-64 object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-6 text-center text-gray-400 fade-in">
+    <p>© <span id="year"></span> Yellowstone Project — Made by <span class="font-semibold text-yellow-400">Varun Monga</span></p>
+  </footer>
+
+  <!-- Scroll To Top -->
+  <button id="scrollTop" class="fixed bottom-6 right-6 font-bold p-3 rounded-full shadow-lg bg-yellow-400 text-black hover:bg-yellow-300 transition transform hover:scale-110 hidden">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+html { scroll-behavior: smooth; }
+.fade-in { opacity: 0; animation: fadeIn 1s forwards; }
+@keyframes fadeIn { to { opacity: 1; } }
+.slide-in-left { opacity: 0; transform: translateX(-100px); animation: slideLeft 1s forwards; }
+@keyframes slideLeft { to { opacity: 1; transform: translateX(0); } }
+.slide-in-right { opacity: 0; transform: translateX(100px); animation: slideRight 1s forwards; }
+@keyframes slideRight { to { opacity: 1; transform: translateX(0); } }
+.scale-in { opacity: 0; transform: scale(0.8); animation: scaleUp 1s forwards; }
+@keyframes scaleUp { to { opacity: 1; transform: scale(1); } }
+.image-hover { transition: transform 0.5s, box-shadow 0.5s, filter 0.5s; }
+.image-hover:hover { transform: scale(1.05) rotate(2deg); box-shadow: 0px 10px 20px rgba(255,255,0,0.5); filter: brightness(1.1); }
+.gallery-item { opacity: 0; transform: translateY(50px); animation: galleryFade 1s forwards; }
+@keyframes galleryFade { to { opacity: 1; transform: translateY(0); } }
+.dark-mode { background: linear-gradient(to bottom, rgb(17,24,39), rgb(0,0,0)); color: rgb(243,244,246); }
+.light-mode { background: linear-gradient(to bottom, rgb(254,240,138), rgb(255,255,255)); color: rgb(31,41,55); }
+.header-dark { background: rgba(0,0,0,0.8); }
+.header-light { background: rgba(255,255,255,0.8); }
+.hidden { display: none; }
+.block { display: block; }
+h1.animate-header { transform: translateY(-50px) rotate(-10deg); opacity: 0; animation: headerAnim 1s forwards; }
+@keyframes headerAnim { to { transform: translateY(0) rotate(0); opacity: 1; } }
+.nav-link { transition: transform 0.3s, color 0.3s; }
+.nav-link:hover { transform: scale(1.2) rotate(-5deg); color: rgb(250,204,21); }
+.text-preserve-lines { white-space: pre-line; }
+.theme-btn { transition: all 0.3s; }
